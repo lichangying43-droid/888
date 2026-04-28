@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-low": "#f4f3f7",
+                    "surface-container": "#efedf1",
+                    "primary-fixed": "#d2e8d6",
+                    "tertiary-fixed": "#e4e2db",
+                    "surface-container-highest": "#e3e2e6",
+                    "secondary": "#78583e",
+                    "primary-fixed-dim": "#b6ccba",
+                    "inverse-on-surface": "#f1f0f4",
+                    "surface-variant": "#e3e2e6",
+                    "on-surface-variant": "#434843",
+                    "secondary-container": "#fdd2b1",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#172a1e",
+                    "on-background": "#1a1b1e",
+                    "tertiary-fixed-dim": "#c8c7bf",
+                    "secondary-fixed-dim": "#e8be9f",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#a7a69f",
+                    "on-surface": "#1a1b1e",
+                    "outline-variant": "#c3c8c1",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed-variant": "#474741",
+                    "on-primary-container": "#96ab9b",
+                    "primary-container": "#2d4033",
+                    "tertiary-container": "#3c3c37",
+                    "inverse-surface": "#2f3033",
+                    "inverse-primary": "#b6ccba",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed": "#1b1c17",
+                    "outline": "#737873",
+                    "on-primary-fixed-variant": "#384b3e",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed": "#2c1603",
+                    "surface-tint": "#4f6355",
+                    "on-secondary-container": "#78583f",
+                    "surface-dim": "#dbd9dd",
+                    "surface-container-high": "#e9e7eb",
+                    "on-error-container": "#93000a",
+                    "surface": "#faf9fd",
+                    "secondary-fixed": "#ffdcc2",
+                    "on-secondary-fixed-variant": "#5d4128",
+                    "surface-bright": "#faf9fd",
+                    "background": "#faf9fd",
+                    "tertiary": "#262622",
+                    "on-primary-fixed": "#0d1f14"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "container-max-width": "1200px",
+                    "gutter": "24px",
+                    "unit": "4px",
+                    "margin": "48px"
+            },
+            "fontFamily": {
+                    "notoSerif": ["Noto Serif", "serif"],
+                    "plusJakartaSans": ["Plus Jakarta Sans", "sans-serif"],
+                    "headline-md": ["Noto Serif"],
+                    "label-lg": ["Plus Jakarta Sans"],
+                    "label-sm": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "display-lg": ["Noto Serif"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Noto Serif"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                    "label-lg": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                    "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "500" }],
+                    "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                    "display-lg": ["56px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                    "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                    "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "500" }]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { background-color: #F2F0E8; }
+    </style>
+</head>
+<body class="font-body-md text-on-surface">
+<!-- TopNavBar -->
+<header class="bg-[#F2F0E8] border-b border-[#2D4033]/10 fixed w-full top-0 z-50">
+<div class="flex justify-between items-center max-w-[1200px] mx-auto px-8 h-24">
+<div class="text-2xl font-notoSerif font-medium text-[#2D4033]">L'ESSENCE</div>
+<nav class="hidden md:flex items-center gap-10 font-notoSerif tracking-tight">
+<a class="text-[#2D4033] border-b-2 border-[#2D4033] pb-1 font-medium transition-colors duration-300" href="#">Home</a>
+<a class="text-[#2D4033]/70 font-normal hover:text-[#2D4033] transition-colors duration-300" href="#">Menu</a>
+<a class="text-[#2D4033]/70 font-normal hover:text-[#2D4033] transition-colors duration-300" href="#">Location</a>
+<a class="text-[#2D4033]/70 font-normal hover:text-[#2D4033] transition-colors duration-300" href="#">Contact</a>
+</nav>
+<button class="bg-primary-container text-on-primary px-8 py-3 font-label-lg rounded-none transition-all duration-200 active:opacity-80">
+                Book a Table
+            </button>
+</div>
+</header>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative h-[870px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Signature Dish" class="w-full h-full object-cover" data-alt="Close-up of a meticulously plated gourmet dish with micro-greens and a rich sauce on a dark matte plate, soft moody lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsIU1tXR1gWUR2jeROU451DRAGiWq3O9fW3hIPBxOEUmRhqQQkVV85DaNPIVYX-XhyWTKBOE_66-jBhV2yKzGUJ4g8bWv6J4JjpcDrrDyUq3QvcWWYG7LPnjUdWYO-nIPLPeMUD7LoSSNcjPpeYgIf00MMYRRFblOhmFeime95L9_ovpwTMNF4sz4mm2pawFcjWbRX9x-8cQ_pHzT5oyLShugnJEvAZe0-djUpPulcLRrt3UWv9gQpfLwQHOCddD4VpnZzi6062fQ"/>
+<div class="absolute inset-0 bg-black/30"></div>
+</div>
+<div class="relative z-10 text-center text-white px-4 max-w-4xl">
+<span class="font-label-lg uppercase tracking-[0.3em] mb-6 block">Est. 1924 — Paris</span>
+<h1 class="font-display-lg text-white mb-8 leading-tight">Modern Culinary Heritage</h1>
+<p class="font-body-lg text-white/90 mb-10 max-w-2xl mx-auto">Where the precision of modern gastronomy meets the timeless soul of traditional French hospitality.</p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<button class="bg-[#172a1e] text-white px-10 py-4 font-label-lg uppercase tracking-widest hover:bg-[#2d4033] transition-colors">
+                        Explore the Menu
+                    </button>
+</div>
+</div>
+</section>
+<!-- Culinary Heritage Section -->
+<section class="py-24 bg-[#F2F0E8]">
+<div class="max-w-[1200px] mx-auto px-8 grid md:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="aspect-[4/5] overflow-hidden">
+<img alt="Chef at Work" class="w-full h-full object-cover" data-alt="Elegant restaurant interior with warm lighting, wood accents, and white linen tables prepared for evening service" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNeN79g0JhH0IkxqDUssd-ta9BJUbjOSHnfJbBkyV2U2fd0_osy3le3wltECurOWyikbzUJbISxvLv_-uD45UHqry-x7ufGk97G4zBLjHwNRS4G_mC_TijW8Lw9rG97tAEFjv8ciyyd-aEipJwFnwt4V6dZ893pEAD1uKEMIc-D9HWp-mI6mmicl4VQMN5Wc-31ygoxnf7AKSu5WjS4y7OndFdY-3zhMYLUSCShynIBpAubRtwSSrhZtw99mk-bw5pAkknp2D4WJw"/>
+</div>
+<div class="absolute -bottom-10 -right-10 hidden lg:block w-64 aspect-square bg-white p-4 shadow-xl border border-[#2D4033]/5">
+<img alt="Detail" class="w-full h-full object-cover" data-alt="Macro detail of a hand-poured red wine into a crystal glass in a dimly lit, sophisticated setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa_hyDBZ3ue7_3HWQengEk6SczH0dVGCAsiGf7wWCLCHDIS6rJzWhN2JEUMlxieooRWynVFiok63y1k7Ov5onxL9xN-wbq0EvjsSdLtcoqAAqXbfdgmw40k_UTXZU8QdLir_Udbml21kcd-h0ua9yff1R9-uoUkX5tC5F1XyQdrl5tpQXngzdYEvo8_D2BSEYyRdC5Ke41SBuL26vliXkh4v3fcTpCLrYJoyayfRn8BVR3JitMd-GCFbfWTvXGbYdZhlGT4JfW9M8"/>
+</div>
+</div>
+<div class="space-y-8">
+<span class="font-label-lg text-secondary uppercase tracking-widest">Our Philosophy</span>
+<h2 class="font-headline-lg text-primary text-4xl md:text-5xl">Grounded in Tradition, Driven by Innovation</h2>
+<p class="font-body-lg text-on-surface-variant">
+                        At L'Essence, we believe that the soul of a dish lies in its history. Our heritage stretches back a century, rooted in the classic techniques of French haute cuisine. Today, we reinterpret these foundations through a contemporary lens.
+                    </p>
+<p class="font-body-lg text-on-surface-variant">
+                        Every ingredient is sourced from artisanal producers who share our commitment to the land. Our kitchen is a laboratory of taste, where seasonal produce is transformed into an evocative narrative of flavor and memory.
+                    </p>
+<div class="pt-6">
+<a class="inline-flex items-center gap-4 font-label-lg text-primary group" href="#">
+                            LEARN ABOUT OUR STORY
+                            <span class="material-symbols-outlined transition-transform group-hover:translate-x-2" data-icon="arrow_right_alt">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Signature Experience (Bento Grid Style) -->
+<section class="py-24 bg-white">
+<div class="max-w-[1200px] mx-auto px-8">
+<div class="text-center mb-20">
+<h3 class="font-headline-lg text-primary mb-4">The L'Essence Experience</h3>
+<div class="h-px w-20 bg-secondary mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Grid Item 1 -->
+<div class="md:col-span-2 group relative overflow-hidden h-[500px]">
+<img alt="Private Dining" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Interior of a luxury private dining room with a long wooden table, leather chairs, and contemporary art on the walls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACKzH91HnDsGPfNHWpBgFG04COccosO7VRXVoutO7NG46xRkqsVqMEk46MOKg4UOJDlDFvFYmNNEBfSTHWOSP-PyPWASeSdoIppvDAqPFxw9yPsR6MyDBWu0phG5HrtBOQ0DPWjsr4CFC8YyX2R8K8KQ1O-9Nvw0j06msJ_NYAsAiAmqLHLT08YDP9Q6-RN4W8ftpnGHDWdl0omqdsKi3NPP7JtK61P6DoJS9iZNZeWqB4eXy_JuqE-r_yp0ZXnOvS2t5x-kr4cyA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-10">
+<h4 class="font-headline-md text-white mb-2">Private Enclaves</h4>
+<p class="font-body-md text-white/80 max-w-sm">Intimate spaces designed for celebrations and shared stories.</p>
+</div>
+</div>
+<!-- Grid Item 2 -->
+<div class="group relative overflow-hidden h-[500px] bg-primary-container flex flex-col justify-center p-10">
+<span class="material-symbols-outlined text-secondary-container text-5xl mb-6" data-icon="restaurant">restaurant</span>
+<h4 class="font-headline-md text-white mb-4">The Tasting Menu</h4>
+<p class="font-body-md text-on-primary-container mb-8">An eleven-course journey through the micro-seasons of the Loire Valley.</p>
+<button class="border border-on-primary-container text-white py-3 px-6 font-label-sm uppercase tracking-widest hover:bg-white hover:text-primary transition-all">
+                            View Menu
+                        </button>
+</div>
+<!-- Grid Item 3 -->
+<div class="group relative overflow-hidden h-[500px]">
+<img alt="Cellar" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Extensive wine cellar with rows of aged bottles in wooden racks, illuminated by soft amber lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5I8_8HVuGfqvAsiUSUS3qAOP6likt6BM0Lz8dX370bKMSPlaECvu0ImVLMl2TDs9GS9JrVJ947lrz0GIg0S1dUmGutYIR3v6oz7x5UO8JfkwN-dhbpY6enKwEoyzZdlUInVr24C2tD6dsGRndIW7w_GC1rjOUOFYkkgNUm4aXgN9KU0hhxApN4MDcjULac5fpy3QI1kwSHy7NztipsVpfByCK9FnVo1rlMjGjLbJkehzeLAsKgsPZ70cViWx05aBV2BPRN68XDOg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-10">
+<h4 class="font-headline-md text-white mb-2">The Archive</h4>
+<p class="font-body-md text-white/80">A curated collection of over 500 rare vintages and terroir-driven wines.</p>
+</div>
+</div>
+<!-- Grid Item 4 -->
+<div class="md:col-span-2 group relative overflow-hidden h-[500px]">
+<img alt="Chef Table" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Professional kitchen scene with chefs in white coats meticulously garnishing plates under warm pendant lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzQ23PJcseDOLiP5RY_qU9JHNOduXLRUHYHpG6GHMtCtcmSeQBLsKvOm7CNVosJXvGQXogMmrsxIuR-tL1wdoegbzqQLjOvC9YqBA3I4UOL9Zfm-u6a-7o3lj7Up1P6-HWWWOs6Cu5uZ9GYmlS5X-XK2crEVK5uWj6mrM0qV1kW7uNVfGcsvVbeIhzyyPLlku-RgkbFfYJTf2CPbNQUy1PtA6WI99OULmlk0YYIQulpke_srMecweQtaF80LRG8xtxVA5tjDK-jgU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-10">
+<h4 class="font-headline-md text-white mb-2">The Chef's Atelier</h4>
+<p class="font-body-md text-white/80 max-w-sm">Witness the craft of high-gastronomy from our exclusive kitchen-facing counter.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Signature Menu List Section -->
+<section class="py-24 bg-[#F2F0E8]">
+<div class="max-w-[800px] mx-auto px-8">
+<div class="text-center mb-16">
+<span class="font-label-lg text-secondary uppercase tracking-[0.2em] mb-4 block">Seasonal Highlights</span>
+<h3 class="font-headline-lg text-primary">From the Kitchen</h3>
+</div>
+<div class="space-y-12">
+<div class="group">
+<div class="flex items-baseline justify-between mb-2">
+<h5 class="font-notoSerif text-xl text-primary">Poached Blue Lobster</h5>
+<div class="flex-grow mx-4 border-b border-dotted border-primary/20"></div>
+<span class="font-notoSerif text-lg text-primary">€75</span>
+</div>
+<p class="font-plusJakartaSans text-on-surface-variant text-sm italic">Vanilla-scented butter, sea buckthorn, braised leeks, and ossetra caviar.</p>
+</div>
+<div class="group">
+<div class="flex items-baseline justify-between mb-2">
+<h5 class="font-notoSerif text-xl text-primary">A5 Wagyu &amp; Black Truffle</h5>
+<div class="flex-grow mx-4 border-b border-dotted border-primary/20"></div>
+<span class="font-notoSerif text-lg text-primary">€110</span>
+</div>
+<p class="font-plusJakartaSans text-on-surface-variant text-sm italic">Charred celeriac, Perigord truffle jus, and smoked marrow emulsion.</p>
+</div>
+<div class="group">
+<div class="flex items-baseline justify-between mb-2">
+<h5 class="font-notoSerif text-xl text-primary">Heritage Duck Breast</h5>
+<div class="flex-grow mx-4 border-b border-dotted border-primary/20"></div>
+<span class="font-notoSerif text-lg text-primary">€65</span>
+</div>
+<p class="font-plusJakartaSans text-on-surface-variant text-sm italic">Honey-lavender glaze, fermented plum, and crisp sunchokes.</p>
+</div>
+<div class="group">
+<div class="flex items-baseline justify-between mb-2">
+<h5 class="font-notoSerif text-xl text-primary">Wild Forest Soufflé</h5>
+<div class="flex-grow mx-4 border-b border-dotted border-primary/20"></div>
+<span class="font-notoSerif text-lg text-primary">€28</span>
+</div>
+<p class="font-plusJakartaSans text-on-surface-variant text-sm italic">Dark chocolate, porcini infusion, and toasted hazelnut cream.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#F2F0E8] border-t border-[#2D4033]/10">
+<div class="max-w-[1200px] mx-auto px-8 py-16 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-lg font-notoSerif text-[#2D4033]">L'ESSENCE</div>
+<div class="flex gap-10">
+<a class="font-notoSerif text-sm uppercase tracking-widest text-[#2D4033]/60 hover:text-[#2D4033] transition-colors" href="#">Privacy Policy</a>
+<a class="font-notoSerif text-sm uppercase tracking-widest text-[#2D4033]/60 hover:text-[#2D4033] transition-colors" href="#">Accessibility</a>
+<a class="font-notoSerif text-sm uppercase tracking-widest text-[#2D4033]/60 hover:text-[#2D4033] transition-colors" href="#">Careers</a>
+</div>
+<div class="font-notoSerif text-sm uppercase tracking-widest text-[#2D4033]/60">
+                © 2024 L'Essence Dining. All rights reserved.
+            </div>
+</div>
+</footer>
+<!-- FAB (Suppressed on Home according to shell rules if not primary action, but included here as the main 'Book' action) -->
+<div class="fixed bottom-8 right-8 z-40 md:hidden">
+<button class="bg-primary-container text-white h-16 w-16 rounded-full shadow-2xl flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
+</button>
+</div>
+</body></html>

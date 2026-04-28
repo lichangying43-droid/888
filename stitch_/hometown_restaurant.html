@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>天一香肉焿順 | 百年傳承</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2d1b11",
+                        "secondary": "#8c4a23",
+                        "surface": "#f8f5f0",
+                        "surface-variant": "#e6dfd3",
+                        "on-surface": "#1a1b1e",
+                        "on-surface-variant": "#434843",
+                        "outline": "#737873",
+                    },
+                    fontFamily: {
+                        "serif": ["'Noto Serif TC'", "serif"],
+                        "sans": ["'Plus Jakarta Sans'", "sans-serif"],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #f8f5f0; color: #2d1b11; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .dotted-leader { flex-grow: 1; border-bottom: 1px dotted #2d1b11; margin: 0 12px 6px 12px; opacity: 0.3; }
+        
+        /* Reveal animation for elements */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Top Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#f8f5f0]/90 backdrop-blur-md border-b border-primary/10 h-24 transition-all duration-300">
+        <div class="max-w-[1200px] mx-auto px-8 h-full flex justify-between items-center">
+            <div class="text-2xl font-serif font-bold text-primary tracking-widest">天一香肉焿順</div>
+            <nav class="hidden md:flex gap-10 items-center">
+                <a href="#home" class="text-primary/70 hover:text-primary font-serif tracking-widest text-sm transition-colors duration-300">首頁</a>
+                <a href="#philosophy" class="text-primary/70 hover:text-primary font-serif tracking-widest text-sm transition-colors duration-300">百年傳承</a>
+                <a href="#menu" class="text-primary/70 hover:text-primary font-serif tracking-widest text-sm transition-colors duration-300">招牌菜單</a>
+                <a href="#location" class="text-primary hover:text-secondary font-serif tracking-widest text-sm transition-colors duration-300">分店位置</a>
+            </nav>
+            <a href="#location" class="bg-primary text-[#f8f5f0] px-6 py-3 font-serif text-sm tracking-widest rounded-none hover:bg-secondary transition-all duration-300">
+                尋找我們
+            </a>
+        </div>
+    </header>
+
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section id="home" class="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1496116218417-1a781b1c416c?q=80&w=2070&auto=format&fit=crop" alt="Traditional Taiwanese Food" class="w-full h-full object-cover grayscale-[30%] opacity-80 scale-105 transform hover:scale-100 transition-transform duration-[10s]" />
+                <div class="absolute inset-0 bg-gradient-to-b from-primary/60 via-primary/40 to-[#f8f5f0]"></div>
+            </div>
+            
+            <div class="relative z-10 text-center max-w-4xl px-8 reveal active">
+                <span class="font-sans text-[#f8f5f0] uppercase tracking-[0.4em] text-sm mb-6 block drop-shadow-md">Est. 1900s — Keelung, Taiwan</span>
+                <h1 class="font-serif text-5xl md:text-7xl text-[#f8f5f0] mb-8 leading-tight drop-shadow-lg">百年飄香 <br/> 淬鍊極致傳統味</h1>
+                <p class="font-serif text-lg md:text-xl text-[#f8f5f0]/90 leading-relaxed max-w-2xl mx-auto drop-shadow-md">
+                    基隆廟口三十一號攤，承載三代人的味覺記憶。<br/>一碗滷肉飯，一碗肉焿，看似簡單，卻蘊含了百年的堅持與匠心。
+                </p>
+            </div>
+        </section>
+
+        <!-- Feature Introduction (特色介紹) -->
+        <section id="philosophy" class="py-24 bg-[#f8f5f0]">
+            <div class="max-w-[1200px] mx-auto px-8 grid md:grid-cols-2 gap-20 items-center reveal">
+                <div class="relative">
+                    <div class="aspect-[4/5] overflow-hidden rounded-sm shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1555126634-ae231a4a9211?q=80&w=1778&auto=format&fit=crop" alt="Chef preparing food" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                    </div>
+                    <div class="absolute -bottom-8 -right-8 hidden lg:flex items-center justify-center w-48 aspect-square bg-white p-6 shadow-2xl border border-primary/10">
+                        <p class="font-serif text-3xl text-primary text-center leading-relaxed font-bold">三代<br/>傳承</p>
+                    </div>
+                </div>
+                <div class="space-y-8">
+                    <span class="font-sans text-secondary uppercase tracking-[0.2em] text-sm font-semibold">Our Philosophy</span>
+                    <h2 class="font-serif text-primary text-4xl md:text-5xl leading-tight font-bold">扎根傳統，堅持純粹</h2>
+                    <p class="font-serif text-on-surface-variant text-lg leading-loose">
+                        在基隆廟口熙來攘往的街巷中，天一香肉焿順走過百年歲月。我們深信，真正的好味道來自於對食材的尊重與時間的淬鍊。
+                    </p>
+                    <p class="font-serif text-on-surface-variant text-lg leading-loose">
+                        每日清晨嚴選新鮮溫體豬肉，手工揉捏製作的肉焿，口感扎實彈牙。招牌滷肉飯則以獨門秘方慢火熬煮十數小時，肥瘦完美比例的滷汁淋在晶瑩剔透的白飯上，入口即化，肥而不膩。這不僅是一場味覺的饗宴，更是基隆在地文化的深刻縮影。
+                    </p>
+                    <div class="pt-6">
+                        <div class="h-px w-24 bg-secondary"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Image & Details (菜單圖片與介紹) -->
+        <section id="menu" class="py-24 bg-white">
+            <div class="max-w-[1200px] mx-auto px-8">
+                <div class="text-center mb-20 reveal">
+                    <span class="font-sans text-secondary uppercase tracking-[0.2em] text-sm font-semibold block mb-4">Signature Offerings</span>
+                    <h2 class="font-serif text-primary text-4xl font-bold mb-6">經典招牌菜單</h2>
+                    <div class="h-px w-16 bg-secondary mx-auto"></div>
+                </div>
+
+                <!-- Menu Image Section -->
+                <div class="mb-24 reveal">
+                    <div class="relative w-full max-w-4xl mx-auto aspect-[16/9] bg-surface-variant shadow-2xl overflow-hidden group">
+                        <!-- Stylized Menu Image -->
+                        <img src="https://images.unsplash.com/photo-1525059696034-4967a8e1dca2?q=80&w=1888&auto=format&fit=crop" alt="Vintage Menu" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500" />
+                        <div class="absolute inset-0 bg-primary/40 flex items-center justify-center">
+                            <div class="bg-[#f8f5f0]/95 p-12 max-w-lg w-full text-center border-2 border-primary/20 shadow-lg transform -rotate-1 hover:rotate-0 transition-transform duration-300">
+                                <h3 class="font-serif text-3xl font-bold text-primary mb-6 border-b border-primary/20 pb-4">天一香 價目表</h3>
+                                <ul class="space-y-4 font-serif text-xl text-primary font-medium">
+                                    <li class="flex justify-between"><span>魯肉飯</span><span>$ 30</span></li>
+                                    <li class="flex justify-between"><span>肉焿</span><span>$ 50</span></li>
+                                    <li class="flex justify-between"><span>油豆腐</span><span>$ 15</span></li>
+                                    <li class="flex justify-between"><span>筍絲</span><span>$ 15</span></li>
+                                    <li class="flex justify-between"><span>滷蛋</span><span>$ 15</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center font-serif text-on-surface-variant italic mt-6 text-sm">※ 實際價格以現場公告為主</p>
+                </div>
+
+                <!-- Detailed Menu Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 reveal">
+                    <!-- Item 1 -->
+                    <div class="flex gap-8 group">
+                        <div class="w-32 h-32 flex-shrink-0 overflow-hidden rounded-full shadow-md">
+                            <img src="https://images.unsplash.com/photo-1627308595186-eec82241bb28?q=80&w=800&auto=format&fit=crop" alt="Braised Pork Rice" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        </div>
+                        <div class="flex-grow flex flex-col justify-center">
+                            <div class="flex items-baseline mb-2">
+                                <h3 class="font-serif text-2xl font-bold text-primary">極品魯肉飯</h3>
+                                <div class="dotted-leader"></div>
+                                <span class="font-serif text-xl text-secondary font-bold">NT$30</span>
+                            </div>
+                            <p class="font-serif text-on-surface-variant leading-relaxed text-sm">
+                                傳承百年的老滷汁，嚴選帶皮肥肉慢熬至膠質釋放，淋在熱騰騰的白米飯上，油亮誘人，入口即化，鹹甜交織的完美平衡。
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="flex gap-8 group">
+                        <div class="w-32 h-32 flex-shrink-0 overflow-hidden rounded-full shadow-md">
+                            <img src="https://images.unsplash.com/photo-1548943487-a2e4e43b4850?q=80&w=800&auto=format&fit=crop" alt="Meat Soup" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        </div>
+                        <div class="flex-grow flex flex-col justify-center">
+                            <div class="flex items-baseline mb-2">
+                                <h3 class="font-serif text-2xl font-bold text-primary">手工肉焿</h3>
+                                <div class="dotted-leader"></div>
+                                <span class="font-serif text-xl text-secondary font-bold">NT$50</span>
+                            </div>
+                            <p class="font-serif text-on-surface-variant leading-relaxed text-sm">
+                                採用新鮮溫體豬肉，保留肉塊的扎實咬勁，外層裹上薄薄魚漿手工捏製。湯頭清甜回甘，帶有微微烏醋香氣，暖胃又暖心。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location & Map Embed (地圖嵌入與聯絡資訊) -->
+        <section id="location" class="relative">
+            <!-- Map Container -->
+            <div class="h-[500px] w-full bg-surface-variant grayscale-[20%]">
+                <!-- Google Maps Embed using the provided link -->
+                <iframe 
+                    src="https://maps.google.com/maps?q=25.1283219,121.7432051&hl=zh-TW&z=18&output=embed" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="w-full h-full"
+                    title="天一香肉焿順 Google 地圖">
+                </iframe>
+            </div>
+
+            <!-- Overlapping Info Card -->
+            <div class="max-w-[1200px] mx-auto px-8 relative -mt-32 z-20 reveal">
+                <div class="bg-[#f8f5f0] p-12 shadow-2xl border-t-4 border-secondary grid grid-cols-1 md:grid-cols-3 gap-12">
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 text-secondary mb-6">
+                            <span class="material-symbols-outlined text-3xl">location_on</span>
+                            <h3 class="font-serif text-2xl font-bold text-primary">餐廳地址</h3>
+                        </div>
+                        <p class="font-serif text-on-surface-variant text-lg leading-relaxed">
+                            基隆市仁愛區仁三路27-1號<br/>
+                            <span class="text-sm text-outline">(基隆廟口夜市 31號攤)</span>
+                        </p>
+                        <a href="https://maps.app.goo.gl/3sawv5E9WrAwpK379" target="_blank" class="inline-block mt-4 font-sans text-sm uppercase tracking-widest text-secondary hover:text-primary transition-colors border-b border-secondary pb-1 font-bold">
+                            在 Google Maps 開啟
+                        </a>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 text-secondary mb-6">
+                            <span class="material-symbols-outlined text-3xl">schedule</span>
+                            <h3 class="font-serif text-2xl font-bold text-primary">營業時間</h3>
+                        </div>
+                        <ul class="font-serif text-on-surface-variant space-y-3 text-lg">
+                            <li class="flex justify-between border-b border-outline/20 pb-2">
+                                <span>星期一 至 星期日</span>
+                                <span>10:00 – 00:30</span>
+                            </li>
+                            <li class="text-sm text-outline italic pt-2">
+                                ※ 營業時間可能隨國定假日調整
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 text-secondary mb-6">
+                            <span class="material-symbols-outlined text-3xl">call</span>
+                            <h3 class="font-serif text-2xl font-bold text-primary">聯絡資訊</h3>
+                        </div>
+                        <p class="font-serif text-on-surface-variant text-lg">
+                            +886 2 2428 3027
+                        </p>
+                        <p class="font-serif text-sm text-outline mt-4 leading-relaxed">
+                            本攤位採現場候位制，尖峰時段人潮眾多，敬請耐心等候。提供外帶服務。
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-[#f8f5f0] pt-24 pb-12 mt-12">
+        <div class="max-w-[1200px] mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-8 border-b border-[#f8f5f0]/20 pb-12 mb-8">
+            <div class="text-3xl font-serif font-bold tracking-widest">天一香肉焿順</div>
+            <div class="flex gap-10">
+                <a href="#" class="font-serif text-sm tracking-widest text-[#f8f5f0]/70 hover:text-white transition-colors">最新消息</a>
+                <a href="#" class="font-serif text-sm tracking-widest text-[#f8f5f0]/70 hover:text-white transition-colors">品牌故事</a>
+                <a href="#" class="font-serif text-sm tracking-widest text-[#f8f5f0]/70 hover:text-white transition-colors">媒體報導</a>
+            </div>
+        </div>
+        <div class="max-w-[1200px] mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-[#f8f5f0]/50 font-sans">
+            <div>© 2024 天一香肉焿順. All rights reserved.</div>
+            <div class="flex items-center gap-2">
+                <span>百年傳承</span>
+                <span class="w-1 h-1 rounded-full bg-secondary mx-2"></span>
+                <span>基隆在地美食</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple scroll reveal animation
+        document.addEventListener("DOMContentLoaded", function() {
+            const reveals = document.querySelectorAll(".reveal");
+            const revealOnScroll = function() {
+                for (let i = 0; i < reveals.length; i++) {
+                    const windowHeight = window.innerHeight;
+                    const elementTop = reveals[i].getBoundingClientRect().top;
+                    const elementVisible = 100;
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveals[i].classList.add("active");
+                    }
+                }
+            };
+            window.addEventListener("scroll", revealOnScroll);
+            revealOnScroll(); // Trigger once on load
+        });
+    </script>
+</body>
+</html>

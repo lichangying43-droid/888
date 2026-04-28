@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f4f3f7",
+                        "surface-container": "#efedf1",
+                        "primary-fixed": "#d2e8d6",
+                        "tertiary-fixed": "#e4e2db",
+                        "surface-container-highest": "#e3e2e6",
+                        "secondary": "#78583e",
+                        "primary-fixed-dim": "#b6ccba",
+                        "inverse-on-surface": "#f1f0f4",
+                        "surface-variant": "#e3e2e6",
+                        "on-surface-variant": "#434843",
+                        "secondary-container": "#fdd2b1",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#172a1e",
+                        "on-background": "#1a1b1e",
+                        "tertiary-fixed-dim": "#c8c7bf",
+                        "secondary-fixed-dim": "#e8be9f",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#a7a69f",
+                        "on-surface": "#1a1b1e",
+                        "outline-variant": "#c3c8c1",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#474741",
+                        "on-primary-container": "#96ab9b",
+                        "primary-container": "#2d4033",
+                        "tertiary-container": "#3c3c37",
+                        "inverse-surface": "#2f3033",
+                        "inverse-primary": "#b6ccba",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#1b1c17",
+                        "outline": "#737873",
+                        "on-primary-fixed-variant": "#384b3e",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed": "#2c1603",
+                        "surface-tint": "#4f6355",
+                        "on-secondary-container": "#78583f",
+                        "surface-dim": "#dbd9dd",
+                        "surface-container-high": "#e9e7eb",
+                        "on-error-container": "#93000a",
+                        "surface": "#faf9fd",
+                        "secondary-fixed": "#ffdcc2",
+                        "on-secondary-fixed-variant": "#5d4128",
+                        "surface-bright": "#faf9fd",
+                        "background": "#faf9fd",
+                        "tertiary": "#262622",
+                        "on-primary-fixed": "#0d1f14"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max-width": "1200px",
+                        "gutter": "24px",
+                        "unit": "4px",
+                        "margin": "48px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Noto Serif"],
+                        "label-lg": ["Plus Jakarta Sans"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "display-lg": ["Noto Serif"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Noto Serif"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "label-lg": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #F2F0E8;
+            color: #2D4033;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #F2F0E8;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #2D4033;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md antialiased">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-[#F2F0E8] border-b border-[#2D4033]/10">
+<div class="flex justify-between items-center max-w-[1200px] mx-auto px-8 h-24">
+<a class="text-2xl font-serif font-medium text-[#2D4033] tracking-tight" href="#">L'ESSENCE</a>
+<nav class="hidden md:flex items-center space-x-12">
+<a class="text-[#2D4033]/70 font-serif font-normal hover:text-[#2D4033] transition-colors duration-300" href="#">Home</a>
+<a class="text-[#2D4033]/70 font-serif font-normal hover:text-[#2D4033] transition-colors duration-300" href="#">Menu</a>
+<a class="text-[#2D4033] border-b-2 border-[#2D4033] pb-1 font-serif font-medium" href="#">Location</a>
+<a class="text-[#2D4033]/70 font-serif font-normal hover:text-[#2D4033] transition-colors duration-300" href="#">Contact</a>
+</nav>
+<button class="bg-[#2D4033] text-[#F2F0E8] px-8 py-3 font-label-lg uppercase transition-all duration-200 active:opacity-80">
+                Book a Table
+            </button>
+</div>
+</header>
+<main class="pt-24 min-h-screen">
+<!-- Hero Section -->
+<section class="relative h-[614px] overflow-hidden">
+<div class="absolute inset-0">
+<img alt="L'ESSENCE Exterior" class="w-full h-full object-cover" data-alt="Modern minimalist restaurant exterior with warm light glowing through large windows, nestled in a quiet urban street of Taipei at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeh3LzgmQvqM36UnHW7z7WzgvE8ODk79Dg4e3W5e0RRQfiNLyXIwe2_HHH1UeZw6TNajEMUHCgaMCAftewVhOnA_9OBB-GXRePAsgKU_HamKmETDkfoEXzQ-9nRPf5B2HZWhoMOx1-4Wn_P_YLx__z7mi8ihi1SGmAh76jUkwFC_0wfh8P-HJ8Iwgw5vOwEDtnNHuI0AfLk5ErAfOsOingHEDSrFeZkP_gb_uIplPtQq4MjY1iouEVzOvW2qjJwFZoTniUUSx0mgY"/>
+<div class="absolute inset-0 bg-primary/20"></div>
+</div>
+<div class="relative h-full flex items-center justify-center text-center px-8">
+<div class="max-w-3xl">
+<span class="font-label-lg text-white/90 uppercase tracking-[0.3em] mb-4 block">Visit Us</span>
+<h1 class="font-display-lg text-white mb-6">Our Sanctuary in Da’an</h1>
+</div>
+</div>
+</section>
+<!-- Location Details Content -->
+<section class="max-w-[1200px] mx-auto px-8 py-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Left: Information Column -->
+<div class="lg:col-span-5 space-y-12">
+<div>
+<h2 class="font-headline-lg mb-8">The Address</h2>
+<div class="flex items-start gap-4 p-6 bg-white border border-[#2D4033]/5">
+<span class="material-symbols-outlined text-secondary mt-1">location_on</span>
+<div>
+<p class="font-headline-md text-primary mb-2">Da’an District</p>
+<address class="not-italic font-body-lg text-on-surface-variant">
+                                    No. 5, Lane 20, Section 2,<br/>
+                                    Anhe Rd, Taipei City, Taiwan
+                                </address>
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<h3 class="font-label-lg uppercase tracking-widest text-secondary">Getting Here</h3>
+<div class="space-y-8">
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full border border-secondary/20 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-secondary">directions_subway</span>
+</div>
+<div>
+<p class="font-label-lg text-primary mb-1">Public Transport</p>
+<p class="font-body-md text-on-surface-variant">Exit 3 of Xinyi Anhe Station (Red Line). A brief 5-minute stroll through the quiet lanes of Anhe Road.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full border border-secondary/20 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-secondary">directions_car</span>
+</div>
+<div>
+<p class="font-label-lg text-primary mb-1">Valet Parking</p>
+<p class="font-body-md text-on-surface-variant">Valet service is available from 18:00 nightly. Alternatively, public parking is available at the Dunhua South Road Plaza.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-[#2D4033]/10">
+<h3 class="font-label-lg uppercase tracking-widest text-secondary mb-6">Service Hours</h3>
+<div class="grid grid-cols-2 gap-y-4 font-body-md text-on-surface-variant">
+<p>Tuesday — Friday</p>
+<p class="text-right">18:00 – 23:00</p>
+<p>Saturday — Sunday</p>
+<p class="text-right">12:00 – 15:00<br/>18:00 – 23:00</p>
+<p class="text-primary font-medium">Monday</p>
+<p class="text-right text-primary font-medium italic">Closed</p>
+</div>
+</div>
+</div>
+<!-- Right: Interactive Map Column -->
+<div class="lg:col-span-7 flex flex-col h-full min-h-[500px]">
+<div class="relative flex-grow bg-surface-container-highest overflow-hidden">
+<!-- Placeholder for Google Map -->
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="text-center z-10 px-8">
+<span class="material-symbols-outlined text-5xl text-secondary mb-4">map</span>
+<p class="font-headline-md text-primary mb-2">Interactive Map</p>
+<p class="font-body-md text-on-surface-variant">Click to open in Google Maps</p>
+</div>
+<img alt="Taipei City Map" class="w-full h-full object-cover opacity-30 grayscale" data-alt="Stylized minimalist map of Taipei Da'an District with soft cream and charcoal color palette" data-location="Taipei" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKgNJYUN5NEjz4rc1LEiehGOxsHAmDmcT6ZS84oF4RT2pgQIQgDEQgmcnpAfcfdDPGYOsSb40AnMUAI8pJ9NOtgWw5nl8Xqt_0kvnjE4KPjM3iKL8Gg-uBceEsPwjkJcbFAWvh88VM6JzJplEoKcmSLrkUvRyX5KkFYsVRG7Irs1zfynBGG41q6VZ-ZW-cAlrdKqpefaLTXoMzjhmM-Xz4KEJJoqSnLCMD5X5kn-YYrWnJxkhZGjnzD27mKttQuoDgeqUf4PAdBRw"/>
+</div>
+<a class="absolute inset-0 z-20 cursor-pointer hover:bg-primary/5 transition-colors duration-300" href="https://maps.google.com/?q=No.+5,+Lane+20,+Section+2,+Anhe+Rd,+Da’an+District,+Taipei+City" target="_blank"></a>
+</div>
+<!-- Directions Call to Action -->
+<div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+<a class="flex items-center justify-center gap-3 border border-secondary py-4 font-label-lg uppercase text-secondary hover:bg-secondary hover:text-white transition-all duration-300" href="#">
+<span class="material-symbols-outlined">near_me</span>
+                            Get Directions
+                        </a>
+<a class="flex items-center justify-center gap-3 border border-secondary py-4 font-label-lg uppercase text-secondary hover:bg-secondary hover:text-white transition-all duration-300" href="#">
+<span class="material-symbols-outlined">call</span>
+                            Contact Concierge
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Neighborhood Section -->
+<section class="bg-primary py-24 overflow-hidden">
+<div class="max-w-[1200px] mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="relative">
+<div class="aspect-[4/5] relative z-10">
+<img alt="Taipei Lanes" class="w-full h-full object-cover" data-alt="Quiet, tree-lined lane in Da'an Taipei with golden sunlight filtering through leaves and modern architectural details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjNjqOLQaos-A3KaHUxyEazcOUT40wX-OCxRDxhdN-x_Mflqaf5dIzMJRnr9wH0n4qkfWRA4f4v_gYnwFl8gHEYCJ53UOLPe9YFCw_mSgCg6YFt1VeDT_cewWIATz4iaUENUj6AIs1WmalxkI_3SAtr4Z80KZkTivcBfCYWlIGVUIXRVHAhPXH-YKjOJ6fPiD2qem3kgearrC_DApIl733fpqTdYXEhoE3xM52NNzIXKeqYFlnFknuY2wrzuBCHlYzTU5z5K4A7Vw"/>
+</div>
+<div class="absolute -top-12 -right-12 w-64 h-64 border border-white/10 hidden lg:block"></div>
+</div>
+<div class="text-[#F2F0E8]">
+<span class="font-label-lg uppercase tracking-widest text-primary-fixed-dim mb-4 block">The Neighborhood</span>
+<h2 class="font-display-lg mb-8 leading-tight">Elegance in Every Corner</h2>
+<p class="font-body-lg text-primary-fixed-dim/80 mb-12 leading-relaxed">
+                            Located in the heart of Da’an, L'Essence is surrounded by the rhythmic charm of one of Taipei's most prestigious districts. Before or after your meal, we invite you to explore the local artisan boutiques and quiet parks that define our home.
+                        </p>
+<div class="grid grid-cols-2 gap-8 border-t border-white/10 pt-12">
+<div>
+<p class="font-headline-md mb-2">5 min</p>
+<p class="font-body-md text-primary-fixed-dim/60">From MRT Xinyi Anhe</p>
+</div>
+<div>
+<p class="font-headline-md mb-2">12 min</p>
+<p class="font-body-md text-primary-fixed-dim/60">From Taipei 101</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 text-center bg-[#F2F0E8]">
+<div class="max-w-2xl mx-auto px-8">
+<h2 class="font-headline-lg mb-6">A Table Awaits Your Arrival</h2>
+<p class="font-body-lg text-on-surface-variant mb-12">Reservations are recommended to ensure the finest experience. We look forward to hosting you in our sanctuary.</p>
+<div class="inline-flex gap-8">
+<button class="bg-primary text-white px-12 py-4 font-label-lg uppercase hover:bg-secondary transition-all">Book Reservation</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#F2F0E8] border-t border-[#2D4033]/10 py-16">
+<div class="max-w-[1200px] mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="text-lg font-serif text-[#2D4033]">L'ESSENCE</span>
+<p class="font-serif text-sm uppercase tracking-widest text-[#2D4033]/60">© 2024 L'Essence Dining. All rights reserved.</p>
+</div>
+<nav class="flex gap-12">
+<a class="font-serif text-sm uppercase tracking-widest text-[#2D4033]/60 hover:text-[#2D4033] transition-colors" href="#">Privacy Policy</a>
+<a class="font-serif text-sm uppercase tracking-widest text-[#2D4033]/60 hover:text-[#2D4033] transition-colors" href="#">Accessibility</a>
+<a class="font-serif text-sm uppercase tracking-widest text-[#2D4033]/60 hover:text-[#2D4033] transition-colors" href="#">Careers</a>
+</nav>
+</div>
+</footer>
+</body></html>

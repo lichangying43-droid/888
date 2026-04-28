@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-low": "#f4f3f7",
+                    "surface-container": "#efedf1",
+                    "primary-fixed": "#d2e8d6",
+                    "tertiary-fixed": "#e4e2db",
+                    "surface-container-highest": "#e3e2e6",
+                    "secondary": "#78583e",
+                    "primary-fixed-dim": "#b6ccba",
+                    "inverse-on-surface": "#f1f0f4",
+                    "surface-variant": "#e3e2e6",
+                    "on-surface-variant": "#434843",
+                    "secondary-container": "#fdd2b1",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#172a1e",
+                    "on-background": "#1a1b1e",
+                    "tertiary-fixed-dim": "#c8c7bf",
+                    "secondary-fixed-dim": "#e8be9f",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#a7a69f",
+                    "on-surface": "#1a1b1e",
+                    "outline-variant": "#c3c8c1",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed-variant": "#474741",
+                    "on-primary-container": "#96ab9b",
+                    "primary-container": "#2d4033",
+                    "tertiary-container": "#3c3c37",
+                    "inverse-surface": "#2f3033",
+                    "inverse-primary": "#b6ccba",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed": "#1b1c17",
+                    "outline": "#737873",
+                    "on-primary-fixed-variant": "#384b3e",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed": "#2c1603",
+                    "surface-tint": "#4f6355",
+                    "on-secondary-container": "#78583f",
+                    "surface-dim": "#dbd9dd",
+                    "surface-container-high": "#e9e7eb",
+                    "on-error-container": "#93000a",
+                    "surface": "#faf9fd",
+                    "secondary-fixed": "#ffdcc2",
+                    "on-secondary-fixed-variant": "#5d4128",
+                    "surface-bright": "#faf9fd",
+                    "background": "#faf9fd",
+                    "tertiary": "#262622",
+                    "on-primary-fixed": "#0d1f14"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline-md": ["Noto Serif", "serif"],
+                    "label-lg": ["Plus Jakarta Sans", "sans-serif"],
+                    "label-sm": ["Plus Jakarta Sans", "sans-serif"],
+                    "body-md": ["Plus Jakarta Sans", "sans-serif"],
+                    "display-lg": ["Noto Serif", "serif"],
+                    "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+                    "headline-lg": ["Noto Serif", "serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #F2F0E8; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .dotted-leader {
+            border-bottom: 1px dotted #2D4033;
+            flex-grow: 1;
+            margin: 0 8px;
+            margin-bottom: 6px;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-[#F2F0E8] dark:bg-stone-900 border-b border-[#2D4033]/10">
+<div class="flex justify-between items-center max-w-[1200px] mx-auto px-8 h-24">
+<div class="text-2xl font-serif font-medium text-[#2D4033] dark:text-stone-100">L'ESSENCE</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-[#2D4033]/70 dark:text-stone-400 font-normal font-serif tracking-tight hover:text-[#2D4033] transition-colors duration-300" href="#">Home</a>
+<a class="text-[#2D4033]/70 dark:text-stone-400 font-normal font-serif tracking-tight hover:text-[#2D4033] transition-colors duration-300" href="#">Menu</a>
+<a class="text-[#2D4033]/70 dark:text-stone-400 font-normal font-serif tracking-tight hover:text-[#2D4033] transition-colors duration-300" href="#">Location</a>
+<a class="text-[#2D4033] dark:text-white border-b-2 border-[#2D4033] pb-1 font-medium font-serif tracking-tight" href="#">Contact</a>
+</div>
+<button class="bg-primary-container text-on-primary px-6 py-3 font-label-lg rounded-none hover:bg-secondary transition-all duration-300">
+                Book a Table
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-24 max-w-[1200px] mx-auto px-8">
+<!-- Hero Section -->
+<header class="mb-24 text-center">
+<h1 class="font-display-lg text-display-lg text-primary mb-6">Concierge &amp; Reservations</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Whether you are joining us for a celebratory dinner or a quiet evening of fine dining, our team is here to ensure your experience is nothing short of exceptional.
+            </p>
+</header>
+<!-- Asymmetric Layout: Contact Info & Reservation Form -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<!-- Sidebar: Details -->
+<aside class="lg:col-span-4 space-y-12">
+<div class="space-y-8">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Contact Details</h3>
+<div class="space-y-4">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary" data-icon="call">call</span>
+<p class="font-body-md text-body-md">+1 (555) 824-9000</p>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary" data-icon="mail">mail</span>
+<p class="font-body-md text-body-md">reservations@lessence.com</p>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary" data-icon="location_on">location_on</span>
+<p class="font-body-md text-body-md">124 Avenue des Champs-Élysées<br/>Paris, France 75008</p>
+</div>
+</div>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Service Hours</h3>
+<div class="space-y-2 font-body-md text-body-md">
+<div class="flex justify-between items-end">
+<span>Tuesday – Thursday</span>
+<div class="dotted-leader"></div>
+<span>18:00 – 22:30</span>
+</div>
+<div class="flex justify-between items-end">
+<span>Friday – Saturday</span>
+<div class="dotted-leader"></div>
+<span>17:30 – 23:30</span>
+</div>
+<div class="flex justify-between items-end">
+<span>Sunday Brunch</span>
+<div class="dotted-leader"></div>
+<span>11:00 – 15:00</span>
+</div>
+<div class="flex justify-between items-end text-on-surface-variant italic">
+<span>Monday</span>
+<div class="dotted-leader"></div>
+<span>Closed</span>
+</div>
+</div>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Follow Our Story</h3>
+<div class="flex gap-6">
+<a class="text-primary hover:text-secondary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="camera_alt">camera_alt</span>
+</a>
+<a class="text-primary hover:text-secondary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="facebook">social_leaderboard</span>
+</a>
+<a class="text-primary hover:text-secondary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Decorative Detail Image -->
+<div class="aspect-[4/5] bg-surface-container overflow-hidden">
+<img alt="Elegant restaurant table setting" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Close-up of a perfectly set restaurant table with white linen, polished silver cutlery, and a single stem vase in morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9gE_oxxCivSIHVJwUn6BgpGuAw1k4RdqoysuUXorpOF-doAgv8rcO17Q-z1nNEGTEMwsS23bx40zLoE2dkfx0Eq2gOTd627GCw0TmkM8hcVv96IB7JcBP7RHChTp0aC0IpSiNGXf43sb5VJlamKhEvU5dFn2TSxVyy2jOu0WrkvOp7_p-q62PtICWEkZp6sW3i3Plta02gmDp1u3XEcH4eolcdOkwe9Sr7KTB6Ry6HMiebY7LDFHKOzYK4rPmHhdgvfoVU5qjX_M"/>
+</div>
+</aside>
+<!-- Main: Reservation Form -->
+<div class="lg:col-span-8 bg-white p-12 shadow-sm border border-stone-200/50">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-8">Secure Your Experience</h2>
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="font-label-sm text-on-surface-variant uppercase tracking-wider">Full Name</label>
+<input class="w-full border-0 border-b border-outline bg-transparent py-2 focus:ring-0 focus:border-primary-container transition-all" placeholder="Gourmet Traveller" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-sm text-on-surface-variant uppercase tracking-wider">Email Address</label>
+<input class="w-full border-0 border-b border-outline bg-transparent py-2 focus:ring-0 focus:border-primary-container transition-all" placeholder="example@domain.com" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="space-y-2">
+<label class="font-label-sm text-on-surface-variant uppercase tracking-wider">Guests</label>
+<select class="w-full border-0 border-b border-outline bg-transparent py-2 focus:ring-0 focus:border-primary-container transition-all">
+<option>2 Guests</option>
+<option>3 Guests</option>
+<option>4 Guests</option>
+<option>Large Party (5+)</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label-sm text-on-surface-variant uppercase tracking-wider">Date</label>
+<input class="w-full border-0 border-b border-outline bg-transparent py-2 focus:ring-0 focus:border-primary-container transition-all" type="date"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-sm text-on-surface-variant uppercase tracking-wider">Preferred Time</label>
+<select class="w-full border-0 border-b border-outline bg-transparent py-2 focus:ring-0 focus:border-primary-container transition-all">
+<option>18:30</option>
+<option>19:00</option>
+<option>19:30</option>
+<option>20:00</option>
+<option>20:30</option>
+</select>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-sm text-on-surface-variant uppercase tracking-wider">Special Occasion or Dietary Requirements</label>
+<textarea class="w-full border-0 border-b border-outline bg-transparent py-2 focus:ring-0 focus:border-primary-container transition-all" placeholder="Please let us know if you are celebrating a special occasion..." rows="3"></textarea>
+</div>
+<div class="flex flex-wrap gap-4 py-4">
+<span class="inline-flex items-center px-4 py-1 rounded-none border border-primary-container text-primary-container font-label-sm bg-[#F2F0E8]">VEGAN OPTIONS AVAILABLE</span>
+<span class="inline-flex items-center px-4 py-1 rounded-none border border-primary-container text-primary-container font-label-sm bg-[#F2F0E8]">VALET PARKING</span>
+</div>
+<button class="w-full bg-primary-container text-on-primary py-5 font-label-lg uppercase tracking-[0.2em] hover:bg-secondary transition-all duration-500" type="submit">
+                        Request Reservation
+                    </button>
+<p class="text-center font-label-sm text-on-surface-variant italic">
+                        * Note: Online requests are confirmed via email within 2 hours of submission.
+                    </p>
+</form>
+</div>
+</div>
+<!-- Location Preview (Map Placeholder) -->
+<section class="mt-24">
+<div class="relative h-[450px] w-full bg-surface-container-highest overflow-hidden">
+<div class="absolute inset-0 grayscale opacity-70">
+<!-- Map background image -->
+<div class="w-full h-full bg-[url('https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&amp;w=2074&amp;auto=format&amp;fit=crop')] bg-cover bg-center" data-alt="Stylized grayscale street map of Paris city center with subtle golden markers" data-location="Paris, France" style=""></div>
+</div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-white/90 backdrop-blur-sm p-8 text-center max-w-xs border border-primary/10">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4" data-icon="explore" style="font-variation-settings: 'FILL' 1;">explore</span>
+<h4 class="font-headline-md text-primary mb-2">Find Us</h4>
+<p class="font-body-md mb-6">Experience L'Essence in the heart of the city.</p>
+<a class="font-label-lg text-secondary underline tracking-widest" href="#">OPEN IN MAPS</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#F2F0E8] dark:bg-stone-900 border-t border-[#2D4033]/10 py-16">
+<div class="max-w-[1200px] mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-lg font-serif text-[#2D4033]">L'ESSENCE</div>
+<div class="flex gap-8">
+<a class="font-serif text-sm uppercase tracking-widest text-[#2D4033]/60 hover:text-[#2D4033] transition-colors" href="#">Privacy Policy</a>
+<a class="font-serif text-sm uppercase tracking-widest text-[#2D4033]/60 hover:text-[#2D4033] transition-colors" href="#">Accessibility</a>
+<a class="font-serif text-sm uppercase tracking-widest text-[#2D4033]/60 hover:text-[#2D4033] transition-colors" href="#">Careers</a>
+</div>
+<div class="font-serif text-sm uppercase tracking-widest text-[#2D4033]/70">
+                © 2024 L'Essence Dining. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>
